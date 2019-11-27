@@ -22,24 +22,14 @@
                     </li>
                 </ul>
 
-
-
-
-
-                <form method="GET" action="tim-kiem" method="post" class="navbar-form navbar-left" role="search">
+                <form method="GET" action="tim-kiem" class="navbar-form navbar-left" role="search">
                     {{ csrf_field() }}
-                    <input type="hidden" name="_token" value="{{csrf_token()}}";>
                     <div class="form-group">
                       <input type="text" name="keyword" class="form-control" placeholder="Bạn cần tìm gì?">
                     </div>
                     <button type="submit" class="btn btn-default">Tìm Kiếm</button>
                 </form>
-
-
-
-
-
-
+                
                 @if(Auth::user())
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         

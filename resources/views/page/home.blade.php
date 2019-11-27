@@ -12,10 +12,8 @@
 
         <div class="space20"></div>
 
-
         <div class="row main-left">
             @include('block.menu')
-
             <div class="col-md-9">
                 <div class="panel panel-default">            
                     <div class="panel-heading" style="background-color:#337AB7; color:white;" >
@@ -28,7 +26,7 @@
                             <!-- item -->
                             <div class="row-item row">
                             <h3>
-                                    <a class="cate-list">{{ $theloai->Ten }}</a> |  
+                                <a class="cate-list">{{ $theloai->Ten }}</a> |  
                                     @foreach($theloai->LoaiTin as $loaitin)
                                         <small><a href="loai-tin/{{ $loaitin->TenKhongDau }}"><i>{{ $loaitin->Ten }}</i></a>/</small>
                                     @endforeach
@@ -72,8 +70,10 @@
                     </div>
                 </div>
             </div>
+           
         </div>
         <!-- /.row -->
+       
     </div>
     <!-- end Page Content -->
 @endsection

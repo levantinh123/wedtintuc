@@ -55,26 +55,22 @@
                                 <p><label>Tiêu Đề</label></p>
                                 <input type="text" class="form-control input-width" name="article_title" placeholder="Nhập Tiêu Đề Tin Tức" value="{{ old('article_title') }}" />
                             </div>
-
                             <div class="form-group">
                                 <p><label>Tóm Tắt Nội Dung</label></p>
                                 <textarea name="article_desc" id="demo" class="form-control ckeditor" rows="3">
                                     {{ old('article_desc') }}
                                 </textarea>
                             </div>
-
                             <div class="form-group">
                                 <p><label>Nội Dung Bài Viết</label></p>
                                 <textarea name="article_content" id="demo" class="form-control ckeditor" rows="3">
                                     {{ old('article_content') }}
                                 </textarea>
                             </div>
-
                             <div class="form-group">
                                 <p><label>Thêm Hình Ảnh</label></p>
                                 <input type="file" class="form-control" name="article_img">
                             </div>
-
                             <div class="form-group">
                                 <p><label>Tin Tức Nổi Bật?</label></p>
                                 <label class="radio-inline">
@@ -84,7 +80,6 @@
                                     <input name="article_rep" value="0" type="radio">Không
                                 </label>
                             </div>
-
                             <button type="submit" class="btn btn-default">Thêm</button>
                             <button type="reset" class="btn btn-default btn-mleft">Nhập Lại</button>
                         <form>

@@ -11,7 +11,7 @@ class CommentTableSeeder extends Seeder
      */
     public function run()
     {
-        $NoiDung = array(
+        $bl = array(
     		'Bài viết rất hay',
     		'Tôi rất thích bài viết này',
     		'Bài viết này tạm ổn',
@@ -30,7 +30,7 @@ class CommentTableSeeder extends Seeder
 	        	[
 	        		'idUser' => rand(1,10),
 	            	'idTinTuc' => rand(1,100),
-	            	'NoiDung' => $NoiDung[rand(0,9)],
+	            	'NoiDung' => $bl[rand(0,9)],
 	            	'created_at' => new DateTime()
 	        	]
 	    	);
