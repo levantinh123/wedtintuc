@@ -6,17 +6,17 @@
 
 @section('content')
 <!-- Page Content -->
-    <div class="container">
+    <div class="container" style="margin-top:-20px">
 
-        @include('block.slide')
+    @include('block.menu') 
 
         <div class="space20"></div>
 
 
         <div class="row main-left">
-            @include('block.menu')
-
-            <div class="col-md-9">
+            
+            @include('block.slide')
+            <div class="col-md-12" style="margin-top:40px;">
                 <div class="panel panel-default">            
                     <div class="panel-heading" style="background-color:#337AB7; color:white;" >
                         <h2 style="margin-top:0px; margin-bottom:0px;">Tin Tức</h2>
