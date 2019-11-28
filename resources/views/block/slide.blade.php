@@ -30,7 +30,8 @@
                 <?php 
                     $i++; 
                 ?>
-                    <img class="slide-image" src="upload/slide/{{ $slide->Hinh }}" alt="{{ $slide->NoiDung }}">
+                    <!-- <img class="slide-image" src="upload/slide/{{ $slide->Hinh }}" alt="{{ $slide->NoiDung }}"> -->
+                    <div style="background-image:url(upload/slide/{{ $slide->Hinh }});height:400px;background-size:cover;"></div>
                 </div>
                 @endforeach
             </div>

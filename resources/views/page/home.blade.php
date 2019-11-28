@@ -12,11 +12,15 @@
 
         <div class="space20"></div>
 
-
         <div class="row main-left">
+<<<<<<< HEAD
             
             @include('block.slide')
             <div class="col-md-12" style="margin-top:40px;">
+=======
+            @include('block.menu')
+            <div class="col-md-9">
+>>>>>>> e64645038d314fb698f67291b2d4e415663d57b3
                 <div class="panel panel-default">            
                     <div class="panel-heading" style="background-color:#337AB7; color:white;" >
                         <h2 style="margin-top:0px; margin-bottom:0px;">Tin Tức</h2>
@@ -28,7 +32,7 @@
                             <!-- item -->
                             <div class="row-item row">
                             <h3>
-                                    <a class="cate-list">{{ $theloai->Ten }}</a> |  
+                                <a class="cate-list">{{ $theloai->Ten }}</a> |  
                                     @foreach($theloai->LoaiTin as $loaitin)
                                         <small><a href="loai-tin/{{ $loaitin->TenKhongDau }}"><i>{{ $loaitin->Ten }}</i></a>/</small>
                                     @endforeach
@@ -72,8 +76,10 @@
                     </div>
                 </div>
             </div>
+           
         </div>
         <!-- /.row -->
+       
     </div>
     <!-- end Page Content -->
 @endsection

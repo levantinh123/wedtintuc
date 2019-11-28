@@ -35,7 +35,7 @@ Route::get('dang-ky-tai-khoan','HomeController@Register');
 
 Route::post('dang-ky-tai-khoan','HomeController@DoRegister');
 
-Route::get('tim-kiem','HomeController@Search');//ha`
+Route::get('tim-kiem','HomeController@Search');
 
 Route::get('admin/login','UserController@Login');
 
