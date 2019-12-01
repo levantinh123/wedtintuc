@@ -7,23 +7,21 @@
 @section('content')
 <!-- Page Content -->
     <div class="container" style="margin-top:-20px">
-
-    @include('block.menu') 
+    
+    
 
         <div class="space20"></div>
-
+        @include('block.slide')
         <div class="row main-left">
-<<<<<<< HEAD
+    
+        @include('block.menu') 
             
-            @include('block.slide')
-            <div class="col-md-12" style="margin-top:40px;">
-=======
-            @include('block.menu')
-            <div class="col-md-9">
->>>>>>> e64645038d314fb698f67291b2d4e415663d57b3
+            <div class="col-md-12" style="margin-top:10px;">
+
+    
                 <div class="panel panel-default">            
-                    <div class="panel-heading" style="background-color:#337AB7; color:white;" >
-                        <h2 style="margin-top:0px; margin-bottom:0px;">Tin Tức</h2>
+                    <div class="panel-heading" style="background-color:#202020 ; color:white  ;" >
+                        <h2 style="margin-top:0px; margin-bottom:0px; font-size:40px">Tin Tức</h2>
                     </div>
 
                     <div class="panel-body">
@@ -57,7 +55,7 @@
                                 </div>
                                 
 
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     @foreach($data->all() as $remaining_article)
                                         <a href="tin-tuc/{{ $remaining_article['TieuDeKhongDau'] }}.html">
                                             <h4>
@@ -70,12 +68,14 @@
                                 
                                 <div class="break"></div>
                             </div>
+                            
                             <!-- end item -->
                             @endif
                         @endforeach
                     </div>
                 </div>
             </div>
+            
            
         </div>
         <!-- /.row -->

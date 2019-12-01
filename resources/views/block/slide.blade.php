@@ -1,6 +1,9 @@
 <!-- slider -->
 <div class="row carousel-holder">
-    <div class="col-md-12">
+<div class="col-md-2">
+    <img src="https://i.pinimg.com/564x/d1/05/8d/d1058dbfe15687caf0823590daf03028.jpg" style="height:200px " >
+</div>
+    <div class="col-md-10">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <?php  
@@ -31,7 +34,7 @@
                     $i++; 
                 ?>
                     <!-- <img class="slide-image" src="upload/slide/{{ $slide->Hinh }}" alt="{{ $slide->NoiDung }}"> -->
-                    <div style="background-image:url(upload/slide/{{ $slide->Hinh }});height:400px;background-size:cover;"></div>
+                    <div style="background-image:url(upload/slide/{{ $slide->Hinh }});height:200px;background-size:cover;"></div>
                 </div>
                 @endforeach
             </div>

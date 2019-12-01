@@ -12,7 +12,7 @@
 
         @include('block.menu')
 
-        <div class="col-md-9 ">
+        <div class="col-md-12 ">
             <div class="panel panel-default">
                 <div class="panel-heading" style="background-color:#337AB7; color:white;">
                     <h4><b>{{ $loaitin->Ten }}</b></h4>
